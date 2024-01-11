@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Academy Mangement System</title>
+
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <link rel="stylesheet" href="..\static\css\sidebar_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/dca3264ed7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="..\static\logos\icons8-porsche-144.png" alt="">
+
+
+                    </span>
+
+                    <div class="text logo-text">
+                        <span class="name">FRECO</span>
+                        <span class="profession">Sports Academy</span>
+                    </div>
+
+                </div>
+                <div class="line"></div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+
+
+            <div class="menu-bar">
+                <div class="menu">
+
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+
+
+
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="/">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <!-- Update the cricket, football, and volleyball links with appropriate classes -->
+                        <li class="nav-link">
+                            <a href="#" class="sport-link">
+                                <img src="..\static\logos\icons8-cricket-26.png" alt="">
+                                <span class="text nav-text">Cricket</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#" class="sport-link">
+                                <i class='fas fa-volleyball-ball'></i>
+                                <span class="text nav-text">Volleyball</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#" class="sport-link">
+                                <i class='fas fa-futbol'></i>
+                                <span class="text nav-text">Football</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="/ARedu">
+                                <i class='bx bx-pie-chart-alt icon'></i>
+                                <span class="text nav-text">Educational Content</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-heart icon'></i>
+                                <span class="text nav-text">About Us</span>
+                            </a>
+                        </li>
+
+
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="/user/signout">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Light Mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+
+                </div>
+            </div>
+
+        </nav>
+
+
+        {% block content %}
+        {# Template inserted here #}
+        {% endblock %}
+    </div>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/scripts.js"></script>
+    <script src="..\static\js\script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- <h1>dashboard</h1>
+{{session['user']}} -->
+
+<div class="card-wrapper">
+    <div class="card">
+        <h1 class="center">Dashboard</h1>
+        <p class="center">Logged in successfully </p>
+    </div>
+
+    <div class="card">
+        <h2 class="center">MY Profile</h2>
+        <p>
+            <strong>Name:</strong>{{session['user']['name']}}<br>
+            <strong>USN:</strong>{{session['user']['USN']}}<br>
+            <strong>Email:</strong>{{session['user']['email']}}<br>
+
+
+        </p>
+    </div>
+</div>
+{%endblock%}
+

@@ -1,0 +1,27 @@
+create py -m venv env
+pip install flask pymongo passlib
+create app.py
+create run file- and then we can run using "flask run" code in terminal
+now create html pages in templates: dashboard.html, base.html,home.html
+
+static folder- jquery for form submissions , style.css for style, normalize for uniformality in page
+and add those in base.html
+
+in js folder create: scripts.js for forms management and all
+-----------------------------------------------------------------------------------
+
+now make a user folder which has __init__,models-contains all the main definitions for letting us login,routes- managing all the routing here so import app from app.py
+
+
+write scripts.js file (copy)
+modify models.py by adding the requests.. and encrypting password and all..
+
+Now lets connect to the mongodb database using pymongo in app.py file and create database configuration 
+-create client instance-host +port(default)
+-database variable db=client.data_base_name
+
+then do some changes in model.py regrding the checking in database and start making session in this model.py
+
+next to use sesison in flask we need to create a secret key in flask and we can actually use python to generate a unique keyusing code " python -c 'import os; print(os.urandom(16))' "
+
+now lets build signout in routes.py that directs to model.py where we have the sunction and use session.clear to logout directly

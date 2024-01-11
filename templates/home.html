@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{%block content %}
+
+<div class="card-wrapper">
+    <div class="card">
+        <h1 class="center">Start an Account</h1>
+        <form name="signup_form">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="field" required>
+
+            <label for="name">USN</label>
+            <input type="text" name="usn" class="field" placeholder="college USN" required>
+
+            <label for="name">Email</label>
+            <input type="email" name="email" class="field" pattern="^[a-zA-Z0-9._%+-]+@rvce\.edu\.in$" placeholder="only college id" required>
+            <!-- <small>Must be a valid college email address (e.g., user@rvce.edu.in)</small> -->
+
+            <label for="name">Password</label>
+            <input type="password" name="password" class="field" pattern="^.{6}$" title="Password must be exactly 6 characters long" required>
+            <!-- <small>Must be exactly 6 characters long</small> -->
+
+            <input type="submit" value="Sign Up" class="btn">
+        </form>
+    </div>
+
+<div class="card2">
+    <h1 class="center">Login to the account</h1>
+    <form name="login_form">
+        
+
+        <label for="name">Email</label>
+        <input type="email" name="email" class="field" pattern="^[a-zA-Z0-9._\-]+@rvce.edu.in$"  placeholder="only college id">
+
+        <label for="name">Password</label>    
+        <input type="password" name="password" class="field" required>
+
+        <input type="submit"  value="Log in" class="btn">
+
+    </form>
+</div>
+
+</div>
+
+{%endblock%}

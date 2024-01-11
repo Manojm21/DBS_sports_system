@@ -1,0 +1,236 @@
+/*
+  Colors: http://getuicolors.com
+*/
+
+/* Setup */
+:root {
+  --black: #000000;
+  --almost-black: #263238;
+  --white: #ffffff;
+  --almost-white: #FBFBFB;
+  --grey-light: #CFD8DC;
+  --grey: #B0BEC5;
+  --grey-medium: #78909C;
+  --grey-dark: #455A64;
+  --primary: #1E88E5;
+  --primary-dark: #1976D2;
+  --secondary: #CFD8DC;
+  --secondary-dark: #B0BEC5;
+  --red: #EF4836;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--black);
+  /* background-color: rgb(137, 31, 207); */
+  background-color: rgb(53, 20, 81);
+
+}
+
+/* Typography */
+.center {
+  text-align: center;
+}
+
+h1 {
+  margin: 0.5em 0 1em;
+  font-size: 26px;
+  line-height: 1.2;
+  color: black;
+}
+.card3 h1{
+  color: #ffffff;
+}
+
+h2 {
+  margin: 0.5em 0 1em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+p {
+  margin: 24px 0;
+}
+
+/* Cards */
+/* .card-wrapper {
+  margin: 0 auto;
+  padding: 70px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+} */
+/* .card-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 80px 80px;
+  display: block; 
+} */
+.card-wrapper {
+  position: relative;
+  top: 0;
+  margin-left: 20px;
+  padding: 80px 80px;
+  /* background-color: #2fcb8f; */
+  
+
+  transition: var(--tran-05);
+  display: flex;
+}
+
+.card {
+  border: solid;
+  float: left; /* Set to float left */
+  margin: 0 100px 50px; /* Adjust margin as needed */
+  padding: 5px 40px;
+  width: 410px;
+  box-shadow: 0 8px 26px -4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color:  rgb(5, 0, 0);
+  background-color: rgb(252, 249, 250);
+}
+
+.card2 {
+  border: solid;
+  float: left;
+  margin: 0 40px 240px;
+  padding: 5px 40px;
+  width: 400px;
+  box-shadow: 0 8px 26px -4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: rgb(5 0 0);
+  background-color: rgb(252, 249, 250);
+}
+
+.card3 {
+  --text-color: white;
+  border: dotted;
+  float: left;
+  margin: 0 350px 0px;
+  padding: 5px 20px;
+  width: 600px;
+  height: 400px;
+  box-shadow: 0 8px 26px -4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border-color: rgb(115 21 132);
+  background-color: rgb(171 118 211);
+}
+
+@media only screen and (max-width: 520px) {
+  .card,
+  .card2 {
+    float: none; /* Reset float on small screens */
+    margin: 0 0 30px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .card-wrapper {
+    padding: 30px 0 0;
+  }
+}
+
+
+/* Forms */
+form {
+  transition: opacity .15s ease;
+}
+
+form.loading {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+label {
+  margin: 0 0 2px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: var(--grey-medium);
+  display: block;
+}
+
+.field {
+  margin: 0 0 24px;
+  padding: 11px 16px 9px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  color: #315b70;
+  border: 1.1px solid #2c273c;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  display: block;
+  background: #fdfdff;
+  transition: border-color .15s ease;
+}
+
+
+.field:focus {
+  border-color: var(--grey-medium);
+  outline: none;
+}
+
+.error {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--red);
+}
+
+.error--hidden {
+  display: none;
+}
+
+/* Buttons */
+.btn {
+  margin: 0 0 24px;
+  padding: 11px 30px 10px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  background:rgb(70 220 107);
+  transition: color .15s ease, background-color .15s ease;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn--secondary {
+  color: var(--almost-black);
+  background: var(--secondary);
+}
+
+.btn--secondary:hover {
+  background: var(--secondary-dark);
+}
+
+input[type=submit] {
+  margin: 34px auto 24px;
+  display: block;
+}
+
+
